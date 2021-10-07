@@ -21,7 +21,7 @@ public class StudentAccountController {
     }
 
 
-    @GetMapping("/api/studentAccount/list")
+    @GetMapping("https://askuala-lms.herokuapp.com/api/studentAccount/list")
     public Iterable<StudentAccount> listStudentAccount(){
         return studentAccountService.allStudentAccount();
     }
