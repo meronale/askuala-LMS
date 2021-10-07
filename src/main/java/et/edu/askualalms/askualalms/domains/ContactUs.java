@@ -15,12 +15,12 @@ public class ContactUs {
     @GeneratedValue(strategy = GenerationType.IDENTITY  )
     private Long id;
 
-    @NotBlank(message = "Course name is mandatory.")
+    @NotBlank(message = "Course Full Name is mandatory.")
     @Column(nullable = false)
-    @Size(max =15)
+    @Size(max =45)
     private String courseName;
 
-    @NotBlank(message = "credithour is mandatory.")
+    @NotBlank(message = "email")
     @Column(nullable = false)
     @Size(max =15)
     private String creditHr;
