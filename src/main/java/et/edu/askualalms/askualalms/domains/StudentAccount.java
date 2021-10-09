@@ -49,6 +49,11 @@ public class StudentAccount {
     //@Temporal(TemporalType.DATE)
     private LocalDate dateOfBirth;
 
+    @NotNull(message = "Registration Date is mandatory.")
+    @Column(nullable = false)
+    //@Temporal(TemporalType.DATE)
+    private LocalDate registrationDate;
+
 
     @NotNull(message = "password is mandatory.")
     @Column(nullable = false)

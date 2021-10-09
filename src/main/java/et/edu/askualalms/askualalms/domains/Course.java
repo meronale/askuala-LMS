@@ -20,15 +20,18 @@ public class Course {
     @Size(max = 15)
     private String fullName;
 
-    @NotBlank(message = "Email is mandatory.")
+    @NotBlank(message = "Creadithr is mandatory.")
     @Column(nullable = false)
 
-    private String email;
+    private String creadithr;
 
-    @NotBlank(message = "message is mandatory.")
+    @NotBlank(message = "payment ammount is mandatory.")
     @Column(nullable = false)
+    private String payment;
 
-    private String message;
+    @NotBlank(message = "course description is mandatory.")
+    @Column(nullable = false)
+    private String description;
 
 }
 

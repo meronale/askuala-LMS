@@ -47,7 +47,16 @@ public class TeacherAccount {
         @Column(nullable = false)
         private String department;
 
-        @NotBlank(message = "phonenumber is mandatory.")
+         @NotBlank(message = "department is mandatory.")
+         @Column(nullable = false)
+         private String experiance;
+
+        @NotBlank(message = "department is mandatory.")
+        @Column(nullable = false)
+        private String certification;
+
+
+        @NotBlank(message = "phone number is mandatory.")
         @Column(nullable = false, unique = true)
         @Size(max = 20)
         private String phoneNumber;
