@@ -37,7 +37,8 @@ public class TeacherAccountControllerTestIntegrationTest {
                 "  \"password\": 8880,\n" +
                 "  \"dateOfBirth\": \"1998-01-10\"\n"+
                 "  \"experience\": \"computing\",\n" +
-                "  \"certification\": \"cisco\",\n" +
+                "  \"certification\": \"cisco\",\n"+
+        "  \"department\": \"computing\",\n" +
                 "}";
 
         mockMvc.perform(

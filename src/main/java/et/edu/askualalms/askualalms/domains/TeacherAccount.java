@@ -47,11 +47,11 @@ public class TeacherAccount {
         @Column(nullable = false)
         private String department;
 
-         @NotBlank(message = "department is mandatory.")
+         @NotBlank(message = "experiance is mandatory.")
          @Column(nullable = false)
          private String experience;
 
-        @NotBlank(message = "department is mandatory.")
+        @NotBlank(message = "certification is mandatory.")
         @Column(nullable = false)
         private String certification;
 
