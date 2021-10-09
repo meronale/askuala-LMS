@@ -22,22 +22,24 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 
 public class TeacherAccountControllerTestIntegrationTest {
-    private final String TEACHERACCOUNT_ENDPOINT = " api/teacherAccount/create";
+   // private final String TEACHERACCOUNT_ENDPOINT = " api/teacherAccount/create";
     @Autowired
     private MockMvc mockMvc;
 
     @Test
     public void testCreateTeacherAccountWithValidInformation() throws Exception {
-        String payload = "  \"firstName\": \"jos\",\n" +
+        String payload = "{\n" +
+                "  \"firstName\": \"jos\",\n" +
                 "  \"middleName\": \"Alemayehu\",\n" +
                 "  \"lastName\": \"haile\",\n" +
-                "  \"email\": \"al@jgmma.com\",\n" +
-                "  \"phoneNumber\": \"803093333\",\n" +
+                "  \"email\": \"al@wjgmma.com\",\n" +
+                "  \"phoneNumber\": \"8203093333\",\n" +
                 "  \"password\": 8880,\n" +
                 "  \"dateOfBirth\": \"1998-01-10\",\n" +
                 "  \"experience\": \"computing\",\n" +
                 "  \"certification\": \"cisco\",\n" +
-                "  \"department\": \"computing\"";
+                "  \"department\": \"computing\"\n" +
+                "}";
 
         mockMvc.perform(
 
