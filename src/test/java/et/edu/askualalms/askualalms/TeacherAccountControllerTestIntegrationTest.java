@@ -28,18 +28,16 @@ public class TeacherAccountControllerTestIntegrationTest {
 
     @Test
     public void testCreateTeacherAccountWithValidInformation() throws Exception {
-        String payload = "{\n" +
-                "  \"firstName\": \"jos\",\n" +
+        String payload = "  \"firstName\": \"jos\",\n" +
                 "  \"middleName\": \"Alemayehu\",\n" +
                 "  \"lastName\": \"haile\",\n" +
                 "  \"email\": \"al@jgmma.com\",\n" +
                 "  \"phoneNumber\": \"803093333\",\n" +
                 "  \"password\": 8880,\n" +
-                "  \"dateOfBirth\": \"1998-01-10\"\n"+
+                "  \"dateOfBirth\": \"1998-01-10\",\n" +
                 "  \"experience\": \"computing\",\n" +
-                "  \"certification\": \"cisco\",\n"+
-        "  \"department\": \"computing\",\n" +
-                "}";
+                "  \"certification\": \"cisco\",\n" +
+                "  \"department\": \"computing\"";
 
         mockMvc.perform(
 
