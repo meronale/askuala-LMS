@@ -35,8 +35,9 @@ public class TeacherAccountControllerTestIntegrationTest {
                 "  \"email\": \"al@jgmma.com\",\n" +
                 "  \"phoneNumber\": \"803093333\",\n" +
                 "  \"password\": 8880,\n" +
-                "  \"department\": \"computing\",\n" +
-                "  \"dateOfBirth\": \"1998-01-10\"\n" +
+                "  \"dateOfBirth\": \"1998-01-10\"\n"+
+                "  \"experience\": \"computing\",\n" +
+                "  \"certification\": \"cisco\",\n" +
                 "}";
 
         mockMvc.perform(

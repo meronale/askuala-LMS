@@ -49,7 +49,7 @@ public class TeacherAccount {
 
          @NotBlank(message = "department is mandatory.")
          @Column(nullable = false)
-         private String experiance;
+         private String experience;
 
         @NotBlank(message = "department is mandatory.")
         @Column(nullable = false)

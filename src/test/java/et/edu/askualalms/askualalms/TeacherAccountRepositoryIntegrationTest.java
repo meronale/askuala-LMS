@@ -32,7 +32,10 @@ public class TeacherAccountRepositoryIntegrationTest {
                 .department("Art&lit")
                 .phoneNumber("12345678")
                 .email("jos@meron")
+                .certification("Cisco")
+                .experience("2 year")
                 .password(12546)
+
                 .dateOfBirth(LocalDate.of(1995,1,1))
                 .build();
         TeacherAccount savedTeacherAccount =teacherAccountRepository.save(teacherAccount);
