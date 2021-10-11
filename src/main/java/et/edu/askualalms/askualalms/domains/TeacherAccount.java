@@ -69,7 +69,7 @@ public class TeacherAccount {
 
         @NotNull(message = "password is mandatory.")
         @Column(nullable = false)
-        private Integer password;
+        private String password;
 
         private Boolean isVerified = Boolean.FALSE;
 }

@@ -22,7 +22,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 
 public class TeacherAccountControllerTestIntegrationTest {
-   // private final String TEACHERACCOUNT_ENDPOINT = " api/teacherAccount/create";
+
     @Autowired
     private MockMvc mockMvc;
 
